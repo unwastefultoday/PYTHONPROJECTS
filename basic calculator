@@ -1,25 +1,54 @@
+import math
 i=1
+print("---------------------------------------------------------------")
+print(" type add for addition")
+print(" type subtract for subtraction")
+print(" type multiply for multiplication")
+print(" type divide for division")
+print(" type integer divide for integer division")
+print(" type remainder to show remainder after division")
+print(" type power for exponentiation")
+print(" type round off to find nearest integer")
+print(" type modulus for absolute value")
+print(" type sin for sin of first value")
+print(" type cos for cos of first value")
+print(" type tan for tan of first value")
+print(" type factorial for factorial of first value")
+print(" type sinn for sin of product of both values")
+print(" type cosn for cos of product of both values")
+print(" type tann for tan of product of both values")
+print(" type degree to radian to convert value in degree to radian")
+print(" type radian to degree to convert value in radian to degree")
+print(" type invert to find inverse value")
+print("---------------------------------------------------------------")
 while i<=2:
-    x= float(input("enter a number: "))
     y= input("what to do:")
-    n= float(input("change by: "))
-    import math
+    x= float(input("enter a number: "))
+    
+    
 
     if y=="add":
+        n= float(input("enter another: "))
         print(x+n)
     elif y=="subtract":
+        n= float(input("enter another: "))
         print(x-n)
     elif y=="multiply":
+        n= float(input("enter another: "))
         print(x*n)
     elif y=="divide":
+        n= float(input("enter another: "))
         print(x/n)
-    elif y=="divide but show quotient":
+    elif y=="integer divide":
+        n= float(input("enter another: "))
         print(x//n)
-    elif y=="divide but show remainder":
+    elif y=="remainder":
+        n= float(input("enter another: "))
         print(x%n)
     elif y=="power":
+        n= float(input("enter another: "))
         print(x**n)
-    elif y=="nearest integer":
+    elif y=="round off":
         print(round(x))
     elif y=="modulus":
         print(abs(x))
@@ -32,17 +61,20 @@ while i<=2:
     elif y == "factorial":
         print(math.factorial(x))
     elif y=="sinn":
+        n= float(input("enter another: "))
         print(math.sin(n*x))
     elif y == "cosn":
+        n= float(input("enter another: "))
         print(math.cos(n*x))
     elif y == "tann":
+        n= float(input("enter another: "))
         print(math.tan(n*x))
     elif y == "degree to radian":
         print(math.radians(x))
     elif y == "radian to degree":
         print(math.degrees(x))
-    elif y == "square root":
-        print(math.sqrt(x))
+    elif y == "invert":
+        print(1/x)
         
 
     else:
