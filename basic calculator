@@ -1,0 +1,52 @@
+i=1
+while i<=2:
+    x= float(input("enter a number: "))
+    y= input("what to do:")
+    n= float(input("change by: "))
+    import math
+
+    if y=="add":
+        print(x+n)
+    elif y=="subtract":
+        print(x-n)
+    elif y=="multiply":
+        print(x*n)
+    elif y=="divide":
+        print(x/n)
+    elif y=="divide but show quotient":
+        print(x//n)
+    elif y=="divide but show remainder":
+        print(x%n)
+    elif y=="power":
+        print(x**n)
+    elif y=="nearest integer":
+        print(round(x))
+    elif y=="modulus":
+        print(abs(x))
+    elif y=="sin":
+        print(math.sin(x))
+    elif y == "cos":
+        print(math.cos(x))
+    elif y == "tan":
+        print(math.tan(x))
+    elif y == "factorial":
+        print(math.factorial(x))
+    elif y=="sinn":
+        print(math.sin(n*x))
+    elif y == "cosn":
+        print(math.cos(n*x))
+    elif y == "tann":
+        print(math.tan(n*x))
+    elif y == "degree to radian":
+        print(math.radians(x))
+    elif y == "radian to degree":
+        print(math.degrees(x))
+    elif y == "square root":
+        print(math.sqrt(x))
+        
+
+    else:
+        print("try again")
+
+
+
